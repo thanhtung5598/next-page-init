@@ -1,0 +1,17 @@
+// COLORS
+$color-FFFFFF: #ffffff;
+$color-000000: #000000;
+
+// FONTS
+$font-default: "";
+$font-alternate: "";
+
+// FW
+$fw-300: 300;
+$fw-600: 600;
+
+// BREAKPOINT
+$breakpoint-up: (
+  "md": "screen and (min-width: 769px)",
+  "lg": "screen and (min-width: 1280px)",
+) !default;
