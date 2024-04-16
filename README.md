@@ -1,8 +1,3 @@
-## Required
-Node >= 21
-
-VSCode 1.88
-
 ## Installation
 ```bash
 yarn or yarn install
