@@ -1,6 +1,11 @@
-import HomeContainer from '@/containers/home';
+import HomeContainer from "@/containers/home";
 
 const HomePage = () => {
+
+
+
+
+
   return (
     <div>
       <HomeContainer />
