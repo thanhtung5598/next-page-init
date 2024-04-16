@@ -1,5 +1,6 @@
 ## Required
-Node >= 21 
+Node >= 21
+
 VSCode 1.88
 
 ## Installation
