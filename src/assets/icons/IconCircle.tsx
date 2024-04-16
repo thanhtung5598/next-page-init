@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 
 const IconCircle = (props: React.SVGProps<SVGSVGElement>) => {
   return (
@@ -15,6 +15,6 @@ const IconCircle = (props: React.SVGProps<SVGSVGElement>) => {
   );
 };
 
-IconCircle.displayName = "IconCircle";
+IconCircle.displayName = 'IconCircle';
 
 export default IconCircle;

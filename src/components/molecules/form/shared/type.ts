@@ -1,4 +1,4 @@
-import { type ReactNode } from "react";
+import { type ReactNode } from 'react';
 import {
   type Control,
   type FieldError,
@@ -6,7 +6,7 @@ import {
   type Path,
   type RegisterOptions,
   type UseFormRegister,
-} from "react-hook-form";
+} from 'react-hook-form';
 
 type CommonFieldProps<T extends FieldValues> = {
   label?: string | ReactNode;
