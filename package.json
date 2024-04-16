@@ -10,17 +10,6 @@
     "format": "next lint --fix && prettier '**/*.{json,yaml}' --write --ignore-path .gitignore",
     "prepare": "husky install"
   },
-  "lint-staged": {
-    "**/*.{ts,tsx,json}": [
-      "yarn lint",
-      "yarn format"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
     "cookies-next": "^4.1.1",
