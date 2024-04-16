@@ -1,4 +1,4 @@
-import ContactUsContainer from "~/containers/contact-us";
+import ContactUsContainer from "@/containers/contact-us";
 
 const ContactUsPage = () => {
   return (
