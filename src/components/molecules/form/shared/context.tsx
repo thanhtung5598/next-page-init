@@ -1,4 +1,4 @@
-import { createContext, type ReactNode, useContext } from 'react';
+import { createContext, type ReactNode, useContext, useMemo } from 'react';
 
 type FormContextProps = object;
 
@@ -11,7 +11,8 @@ const initialContext: FormContextProps = {};
 const FormContext = createContext<FormContextProps>(initialContext);
 
 export default function FormProvider({ children }: FormProviderProps) {
-  return <FormContext.Provider value={{}}>{children}</FormContext.Provider>;
+  const sample = useMemo(() => ({ sample: 'sample' }), []);
+  return <FormContext.Provider value={sample}>{children}</FormContext.Provider>;
 }
 
 export function useFormContext(): Partial<FormProviderProps> {

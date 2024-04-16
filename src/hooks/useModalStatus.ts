@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 export type ModalType = undefined;
 
@@ -21,7 +21,7 @@ const useModalStatus = () => {
   };
 
   const isModalTypeOpen = (type: ModalType): boolean => {
-    return modalState.isOpen && modalState.type == type;
+    return modalState.isOpen && modalState.type === type;
   };
 
   return { isModalTypeOpen, onToggleModal } as const;

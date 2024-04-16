@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from 'react';
 
 export interface WindowSize {
   width?: number;
@@ -23,22 +23,22 @@ const useWindowSize = () => {
   useEffect(() => {
     // Run when on mount
     onResize();
-    if (window) window.addEventListener("resize", onResize);
-    return () => window.removeEventListener("resize", onResize);
+    if (window) window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
   }, [onResize]);
 
   const smallerBreakPoints = useCallback(
     (width: keyof typeof BREAKPOINTS) => {
       return Number(BREAKPOINTS[width]) > Number(windowSize.width);
     },
-    [windowSize.width]
+    [windowSize.width],
   );
 
   const largerBreakPoints = useCallback(
     (width: keyof typeof BREAKPOINTS) => {
       return Number(BREAKPOINTS[width]) < Number(windowSize.width);
     },
-    [windowSize.width]
+    [windowSize.width],
   );
 
   return {

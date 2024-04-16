@@ -2,15 +2,15 @@ import {
   type DetailedHTMLProps,
   type FormHTMLAttributes,
   type ReactNode,
-} from "react";
-import FormProvider from "./context";
+} from 'react';
+import FormProvider from './context';
 
 type Form = {
   children: ReactNode;
   onSubmit: () => void;
 } & Omit<
   DetailedHTMLProps<FormHTMLAttributes<HTMLFormElement>, HTMLFormElement>,
-  "onSubmit"
+  'onSubmit'
 >;
 
 const Form = ({ children, onSubmit, ...props }: Form) => {
