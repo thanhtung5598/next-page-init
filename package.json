@@ -8,11 +8,11 @@
     "start": "next start",
     "lint": "next lint",
     "format": "next lint --fix && prettier '**/*.{json,yaml}' --write --ignore-path .gitignore",
-    "prepare": "husky"
+    "prepare": "husky install"
   },
   "lint-staged": {
     "**/*.{ts,tsx,json}": [
-      "yarn format"
+      "yarn lint"
     ]
   },
   "husky": {
