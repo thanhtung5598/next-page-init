@@ -17,7 +17,7 @@ const TextField = <T extends FieldValues>({
     : {};
 
   return (
-    <div>
+    <div className="m-textfield">
       {label && <label htmlFor={innerProps.name}>{label}</label>}
       <input
         id={innerProps.name}
