@@ -1,7 +1,7 @@
 const Button = () => {
   return (
     <div className="a-button">
-      <div>Test webhook</div>
+      <div>Test</div>
     </div>
   );
 };
