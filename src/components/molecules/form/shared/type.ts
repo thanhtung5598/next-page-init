@@ -11,10 +11,12 @@ import {
 type CommonFieldProps<T extends FieldValues> = {
   label?: string | ReactNode;
   error?: FieldError;
+  type?: string;
+  isRequired?: boolean;
   register: UseFormRegister<T>;
   name?: Path<T>;
   registerOptions?: RegisterOptions<T>;
   control?: Control<T>;
 };
 
-export type InputFieldProps<T extends FieldValues> = CommonFieldProps<T>;
+export type TextFieldProps<T extends FieldValues> = CommonFieldProps<T>;

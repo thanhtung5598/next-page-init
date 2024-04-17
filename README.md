@@ -8,7 +8,7 @@ yarn or yarn install
 https://github.com/conventional-changelog/commitlint/#what-is-commitlint
 ```
 
-## Before commit
+## Before commit PLEASE :bowing_man:
 ```bash
 yarn format
 ```

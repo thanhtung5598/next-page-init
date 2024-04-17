@@ -4,6 +4,10 @@ import {
   type ReactNode,
 } from 'react';
 import FormProvider from './context';
+import type { FieldValues } from 'react-hook-form';
+import type { TextFieldProps } from './type';
+
+import TextField from '../text-field';
 
 type Form = {
   children: ReactNode;
@@ -28,5 +32,11 @@ const Form = ({ children, onSubmit, ...props }: Form) => {
     </FormProvider>
   );
 };
+
+const InputField = <T extends FieldValues>(props: TextFieldProps<T>) => {
+  return <TextField {...props} />;
+};
+
+Form.InputField = InputField;
 
 export default Form;

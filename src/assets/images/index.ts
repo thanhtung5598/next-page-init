@@ -1,3 +1,3 @@
 export const IMAGES_CONST = {
-  moon: '/images/moon.png',
+  moonCake: '/images/home/banner-sp.png',
 };
