@@ -1,3 +1,4 @@
+import useCustomToast from '@/hooks/useCustomToast';
 import dynamic from 'next/dynamic';
 
 const trueIcon = (name: string) => {
@@ -13,7 +14,12 @@ const imageKeys: string[] = images.keys().filter(trueIcon);
 const defaultSize = 52;
 
 const NoSsrPage = () => {
+  const toast = useCustomToast();
+
   const copy = (name: string) => {
+    toast.notifySuccess('Copy successful', {
+      position: 'top-center',
+    });
     navigator.clipboard.writeText(`<${name} />`);
   };
 
