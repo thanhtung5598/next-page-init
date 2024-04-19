@@ -1,12 +1,14 @@
-@use "sass:math";
+@use 'sass:math';
 
 @function decimal-round($number, $digits: 0, $mode: round) {
   $n: 1;
+
   @if $digits > 0 {
     @for $i from 1 through $digits {
       $n: $n * 10;
     }
   }
+
   @if $mode == round {
     @return math.div(round($number * $n), $n);
   } @else if $mode == ceil {
@@ -22,6 +24,7 @@
   @if $base-vw == pc {
     $base-vw: 1280;
   }
+
   $value: decimal-round(math.div(($px-vw * 100vw), $base-vw), 8);
 
   @return $value;

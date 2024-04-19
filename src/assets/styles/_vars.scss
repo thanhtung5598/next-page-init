@@ -1,10 +1,12 @@
+/* Expected variable is Kebab-Case */
+
 // COLORS
-$color-FFFFFF: #ffffff;
-$color-000000: #000000;
+$color-ffffff: #fff;
+$color-000000: #000;
 
 // FONTS
-$font-default: "";
-$font-alternate: "";
+$font-default: '';
+$font-alternate: '';
 
 // FW
 $fw-300: 300;
@@ -12,6 +14,6 @@ $fw-600: 600;
 
 // BREAKPOINT
 $breakpoint-up: (
-  "md": "screen and (min-width: 769px)",
-  "lg": "screen and (min-width: 1280px)",
+  'md': 'screen and (min-width: 769px)',
+  'lg': 'screen and (min-width: 1280px)',
 ) !default;
